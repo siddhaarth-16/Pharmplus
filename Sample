@@ -594,15 +594,13 @@
     <script>
         // Product Data
         const products = [
-            { id: 1, name: "Dolo 650", price: 200, image: "https://images.firstpost.com/wp-content/uploads/2022/07/Rep2.jpg?im=FitAndFill=(596,336)" },
-            { id: 2, name: "Paracetamol 500 mg", price: 300, image: "https://assets.sayacare.in/api/images/product_image/large_image/23/74/Paracetamol-500-mg-Tablet_1.webp" },
-            { id: 3, name: "Glimestar", price: 500, image: "https://images.apollo247.in/pub/media/catalog/product/G/L/GLI0014_1_1.jpg?tr=w-264,q-80,f-webp,dpr-false,c-at_max" },
-            { id: 4, name: "Azithromycin", price: 450, image: "https://5.imimg.com/data5/SELLER/Default/2024/10/462041664/YL/ZH/GG/85825727/azithromycin-tablets-500-mg-1000x1000.jpg" },
-            { id: 5, name: "Vitamin C Tablets", price: 150, image: "https://images.apollo247.in/pub/media/catalog/product/V/I/VIT0039_1_1.jpg?tr=w-264,q-80,f-webp,dpr-false,c-at_max" },
-            { id: 6, name: "Calcium Supplements", price: 250, image: "https://via.placeholder.com/150?text=Calcium" },
-            { id: 7, name: "Crocin", price: 50, image: "https://via.placeholder.com/150?text=Crocin" },
-            { id: 8, name: "Cough Syrup", price: 180, image: "https://via.placeholder.com/150?text=Cough+Syrup" },
-            { id: 9, name: "Antibiotic Capsules", price: 350, image: "https://via.placeholder.com/150?text=Antibiotic" }
+            { id: 1, name: "Dolo 650", price: 200, image: "dolo.jpg" },
+            { id: 2, name: "Paracetamol 500 mg", price: 300, image: "dolo.jpg" },
+            { id: 3, name: "Glimestar", price: 500, image:"dolo.jpg" },
+            { id: 4, name: "Azithromycin", price: 450, image: "ghill.jpg" },
+            { id: 5, name: "Vitamin C Tablets", price: 150, image: ".hilljpg" },
+            { id: 6, name: "Calcium Supplements", price: 250, image: "hkk.jpg" },
+         
         ];
 
         // Cart State

@@ -592,15 +592,80 @@
     <div class="toast" id="toast">Item added to cart!</div>
 
     <script>
-        // Product Data
+        // Product Data with FIXED image URLs (using reliable placeholder service)
         const products = [
-            { id: 1, name: "Dolo 650", price: 200, image: "dolo.jpg" },
-            { id: 2, name: "Paracetamol 500 mg", price: 300, image: "dolo.jpg" },
-            { id: 3, name: "Glimestar", price: 500, image:"dolo.jpg" },
-            { id: 4, name: "Azithromycin", price: 450, image: "ghill.jpg" },
-            { id: 5, name: "Vitamin C Tablets", price: 150, image: ".hilljpg" },
-            { id: 6, name: "Calcium Supplements", price: 250, image: "hkk.jpg" },
-         
+            { 
+                id: 1, 
+                name: "Dolo 650", 
+                price: 200, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Dolo+650" 
+            },
+            { 
+                id: 2, 
+                name: "Paracetamol 500 mg", 
+                price: 300, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Paracetamol" 
+            },
+            { 
+                id: 3, 
+                name: "Glimestar", 
+                price: 500, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Glimestar" 
+            },
+            { 
+                id: 4, 
+                name: "Azithromycin", 
+                price: 450, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Azithromycin" 
+            },
+            { 
+                id: 5, 
+                name: "Vitamin C Tablets", 
+                price: 150, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Vitamin+C" 
+            },
+            { 
+                id: 6, 
+                name: "Calcium Supplements", 
+                price: 250, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Calcium" 
+            },
+            { 
+                id: 7, 
+                name: "Crocin", 
+                price: 50, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Crocin" 
+            },
+            { 
+                id: 8, 
+                name: "Cough Syrup", 
+                price: 180, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Cough+Syrup" 
+            },
+            { 
+                id: 9, 
+                name: "Antibiotic Capsules", 
+                price: 350, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Antibiotic" 
+            },
+            { 
+                id: 10, 
+                name: "Aspirin", 
+                price: 120, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Aspirin" 
+            },
+            { 
+                id: 11, 
+                name: "Insulin", 
+                price: 800, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=Insulin" 
+            },
+            { 
+                id: 12, 
+                name: "Blood Pressure Tablets", 
+                price: 280, 
+                image: "https://placehold.co/400x400/2e7d32/white?text=BP+Tablets" 
+            }
         ];
 
         // Cart State
@@ -639,7 +704,7 @@
                 card.setAttribute('onclick', `addToCart(${product.id})`);
                 
                 card.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/150?text=Medicine'">
+                    <img src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
                     <div class="price">₹${product.price}</div>
                     <button class="add-to-cart-btn" onclick="event.stopPropagation(); addToCart(${product.id})">
